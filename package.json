@@ -1,0 +1,20 @@
+{
+  "name": "my-discord-bot",
+  "author": {
+    "name": "Nsbx - Nicolas Bondoux"
+  },
+  "scripts": {
+    "start": "nodemon src/bot.ts"
+  },
+  "dependencies": {
+    "colorette": "^2.0.20",
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.13",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
