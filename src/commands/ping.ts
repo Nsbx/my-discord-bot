@@ -3,7 +3,7 @@ import { Command } from "../command";
 
 const command: Command = {
     name: 'ping',
-    description: 'Replies with Pong!',
+    description: 'Réponds avec un Pong',
     type: ApplicationCommandType.ChatInput,
     exec: async (client: Client, interaction: CommandInteraction) => {
         let startTime = new Date();

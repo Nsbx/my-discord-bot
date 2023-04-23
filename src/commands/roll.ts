@@ -3,7 +3,7 @@ import { Command } from "../command";
 
 let diceCountOption: ApplicationCommandOptionData = {
     name: 'dice_count',
-    description: 'Number of dice',
+    description: 'Nombre de dé',
     type: ApplicationCommandOptionType.Integer,
     min_value: 1,
     maxValue: 20,
@@ -12,7 +12,7 @@ let diceCountOption: ApplicationCommandOptionData = {
 
 let diceFacesOption: ApplicationCommandOptionData = {
     name: 'dice_faces',
-    description: 'Number of dice faces',
+    description: 'Nombre de faces',
     type: ApplicationCommandOptionType.Integer,
     min_value: 2,
     maxValue: 1000,
@@ -21,7 +21,7 @@ let diceFacesOption: ApplicationCommandOptionData = {
 
 const command: Command = {
     name: 'roll',
-    description: 'Replies with dice roll!',
+    description: 'Réponds avec un lancé de dé (ou de pièce)',
     type: ApplicationCommandType.ChatInput,
     options: [
         diceCountOption,

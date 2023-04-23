@@ -3,7 +3,7 @@ import { Command } from "../command";
 
 const command: Command = {
     name: 'user',
-    description: 'Provides information about the user.',
+    description: "Fournis des informations sur l'utilisateur de la commande",
     type: ApplicationCommandType.ChatInput,
     exec: async (client: Client, interaction: CommandInteraction) => {
         let guildMember = interaction.member;
@@ -19,7 +19,7 @@ const command: Command = {
         let joinedAtDate = guildMember.joinedAt;
         let joinedAtString = joinedAtDate.toLocaleDateString(interaction.locale)
 
-        let content = `This command was run by ${interaction.user.username}, who joined on ${joinedAtString}.`;
+        let content = `Cette commande a été utilisé par ${interaction.user.username}, et a rejoint le serveur aà cette date : ${joinedAtString}.`;
         await interaction.reply({ content, ephemeral: true });
     }
 }
